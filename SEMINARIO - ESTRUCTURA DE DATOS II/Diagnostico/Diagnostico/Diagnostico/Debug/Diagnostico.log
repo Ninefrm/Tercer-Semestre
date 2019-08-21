@@ -1,0 +1,10 @@
+﻿  Diagnostico.cpp
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\Diagnostico\Diagnostico\Diagnostico\Diagnostico.cpp(45,5): error C2819:  el tipo 'Dato' no tiene un miembro sobrecargado 'operator ->'
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\Diagnostico\Diagnostico\Diagnostico\Diagnostico.cpp(7): message :  vea la declaración de 'Dato'
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\Diagnostico\Diagnostico\Diagnostico\Diagnostico.cpp(45,5): message :  ¿deseaba utilizar '.' en su lugar?
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\Diagnostico\Diagnostico\Diagnostico\Diagnostico.cpp(45,10): error C2232:  '->Dato::A': el operando izquierdo tiene el tipo 'struct'; utilice '.'
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\Diagnostico\Diagnostico\Diagnostico\Diagnostico.cpp(46,17): error C2819:  el tipo 'Dato' no tiene un miembro sobrecargado 'operator ->'
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\Diagnostico\Diagnostico\Diagnostico\Diagnostico.cpp(7): message :  vea la declaración de 'Dato'
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\Diagnostico\Diagnostico\Diagnostico\Diagnostico.cpp(46,17): message :  ¿deseaba utilizar '.' en su lugar?
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\Diagnostico\Diagnostico\Diagnostico\Diagnostico.cpp(46,20): error C2232:  '->Dato::A': el operando izquierdo tiene el tipo 'struct'; utilice '.'
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\Diagnostico\Diagnostico\Diagnostico\Diagnostico.cpp(48,20): error C2065:  'B': identificador no declarado
