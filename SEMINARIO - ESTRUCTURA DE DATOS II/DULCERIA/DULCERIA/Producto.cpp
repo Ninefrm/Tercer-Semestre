@@ -46,6 +46,7 @@ void Producto::Mostrar()
 
 			Archivo.read((char*)& Buff4, sizeof(int));
 			Archivo.read((char*)& Estado, Buff4);
+			if (Archivo.eof())break;
 			std::cout << Codigo << "		" << Descripcion << "		" << Precio << "." << std::endl;
 		}
 	}
@@ -133,6 +134,68 @@ void Producto::Modificar()
 
 void Producto::Eliminar()
 {
+	int T = 1;
+	int OP;
+	std::string Tmp;
+	char wNombre[30];
+	std::cout << "Producto a buscar: ";
+	std::cin.getline(wNombre, 10);
+	//std::cout << wNombre;
+	std::ifstream Archivo("Productos.txt");
+	std::ofstream File("tmp.txt", std::ios::app);
+	if (!Archivo.good()) std::cout << "Error";
+	else
+
+		while (!Archivo.eof()) {
+			//std::cout << "We are here" << std::endl;
+			Archivo.read((char*)& Buff, sizeof(int));
+			Archivo.read((char*)& Codigo, Buff);
+			Codigo[Buff] = '\0';
+			Archivo.read((char*)& Buff2, sizeof(int));
+			Archivo.read((char*)& Descripcion, Buff2);
+			Descripcion[Buff2] = '\0';
+			Archivo.read((char*)& Buff3, sizeof(int));
+			Archivo.read((char*)& Precio, Buff3);
+			//std::cout << "We are here 2" << std::endl;
+			Archivo.read((char*)& Buff4, sizeof(int));
+			Archivo.read((char*)& Estado, Buff4);
+			//std::cout << "We are here 3" << std::endl;
+			//if (Archivo.eof())break;
+			/*std::cout << wNombre;
+			std::cout << Codigo;
+			std::cout << strcmp(Codigo, wNombre);*/
+			if (strcmp(Codigo, wNombre)) {
+				Buff = strlen(Codigo);
+				Buff2 = strlen(Descripcion);
+				Buff3 = Precio;
+				Buff4 = Estado;
+				File.write((char*)& Buff, sizeof(int));
+				File.write((char*)& Codigo, Buff);
+				File.write((char*)& Buff2, sizeof(int));
+				File.write((char*)& Descripcion, Buff2);
+				File.write((char*)& Buff3, sizeof(int));
+				File.write((char*)& Precio, Buff3);
+				File.write((char*)& Buff4, sizeof(int));
+				File.write((char*)& Estado, Buff4);
+			}
+			if (!strcmp(Codigo, wNombre) && (!Estado)) {
+				Buff = strlen(Codigo);
+				Buff2 = strlen(Descripcion);
+				Buff3 = Precio;
+				Buff4 = Estado;
+				File.write((char*)& Buff, sizeof(int));
+				File.write((char*)& Codigo, Buff);
+				File.write((char*)& Buff2, sizeof(int));
+				File.write((char*)& Descripcion, Buff2);
+				File.write((char*)& Buff3, sizeof(int));
+				File.write((char*)& Precio, Buff3);
+				File.write((char*)& Buff4, sizeof(int));
+				File.write((char*)& Estado, Buff4);
+			}
+
+		}Archivo.close(); File.close();
+		remove("Productos.txt");
+		rename("tmp.txt", "Productos.txt");
 
 }
 
