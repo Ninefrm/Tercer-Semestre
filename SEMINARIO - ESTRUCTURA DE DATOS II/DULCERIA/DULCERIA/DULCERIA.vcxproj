@@ -152,6 +152,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DULCERIA.cpp" />
+    <ClCompile Include="Proveedor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Proveedor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
