@@ -2,48 +2,15 @@
 //
 
 #include <iostream>
-#include "Proveedor.h"
+#include "Menus.h"
 
 int main()
 {
-	Proveedor A;
-	int OP;
-	int W = 1;
-	while (W)
-	{
-		std::cout << "1.- Agregar Proveedor." << std::endl;
-		std::cout << "2.- Imprimir Proveedores." << std::endl;
-		std::cout << "3.- Buscar Proveedor." << std::endl;
-		std::cout << "4.- Modificar Proveedor." << std::endl;
-		std::cout << "5.- Eliminar Proveedor." << std::endl;
-		std::cout << "6.- Salir" << std::endl;
-		std::cout << "Elegir: ";
-		std::cin >> OP;
-		std::cin.ignore();
-		switch (OP)
-		{
-		default:
-			W = 0;
-		break;
-		case 1:
-			A.AgregarProveedor();
-		break;
-		case 2:
-			A.ImprimirProveedores();
-		break;
-		case 3:
-			A.BuscarProveedores();
-		break;
-		case 4:
-			A.ModificarProveedores();
-		break;
-		case 5:
-			A.EliminarProveedor();
-		break;
-		}
-	}
+	Menus A;
+	//A.ProveedorMenu();
+	A.ProductoMenu();
 	
-
+	return 0;
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar

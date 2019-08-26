@@ -152,9 +152,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DULCERIA.cpp" />
+    <ClCompile Include="Menus.cpp" />
+    <ClCompile Include="Producto.cpp" />
     <ClCompile Include="Proveedor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Menus.h" />
+    <ClInclude Include="Producto.h" />
     <ClInclude Include="Proveedor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

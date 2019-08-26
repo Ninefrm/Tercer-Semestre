@@ -1,2 +1,4 @@
-﻿  DULCERIA.cpp
+﻿  Producto.cpp
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\DULCERIA\DULCERIA\Producto.cpp(14,10): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\DULCERIA\DULCERIA\Producto.cpp(118,12): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
   DULCERIA.vcxproj -> A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\DULCERIA\Debug\DULCERIA.exe
