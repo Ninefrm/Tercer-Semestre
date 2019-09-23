@@ -1,7 +1,3 @@
-﻿  Producto.cpp
-A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\DULCERIA\DULCERIA\Producto.cpp(14,10): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
-A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\DULCERIA\DULCERIA\Producto.cpp(119,12): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
-A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\DULCERIA\DULCERIA\Producto.cpp(170,13): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
-A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\DULCERIA\DULCERIA\Producto.cpp(184,13): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
-A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\DULCERIA\DULCERIA\Producto.cpp(138,6): warning C4101:  'OP': variable local sin referencia
+﻿  OrdenesDeCompra.cpp
+A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\DULCERIA\DULCERIA\OrdenesDeCompra.cpp(16,10): warning C4244:  '=': conversión de 'int' a 'float'; posible pérdida de datos
   DULCERIA.vcxproj -> A:\Ninefrm\Desktop\Github\Tercer-Semestre\SEMINARIO - ESTRUCTURA DE DATOS II\DULCERIA\Debug\DULCERIA.exe

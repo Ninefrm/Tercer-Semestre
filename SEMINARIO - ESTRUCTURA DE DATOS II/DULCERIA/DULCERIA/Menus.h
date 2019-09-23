@@ -2,13 +2,17 @@
 #include <iostream>
 #include "Proveedor.h"
 #include "Producto.h"
+#include "OrdenesDeCompra.h"
 
 class Menus
 {
 	public:
-	Proveedor Proveedor;
-	Producto Producto;
-	void ProveedorMenu();
-	void ProductoMenu();
+		Proveedor ProveedorM;
+		Producto ProductoM;
+		OrdenesDeCompra OrdenDeCompra;
+	
+		void ProveedorMenu();
+		void ProductoMenu();
+		void OrdenesDeCompraMenu();
 };
 

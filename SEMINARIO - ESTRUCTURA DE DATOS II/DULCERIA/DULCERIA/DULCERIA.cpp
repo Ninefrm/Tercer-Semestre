@@ -3,12 +3,15 @@
 
 #include <iostream>
 #include "Menus.h"
+//#include "OrdenesDeCompra.h"
+
 
 int main()
 {
 	Menus A;
 	//A.ProveedorMenu();
 	A.ProductoMenu();
+	A.OrdenesDeCompraMenu();
 	
 	return 0;
 }

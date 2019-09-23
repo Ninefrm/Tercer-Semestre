@@ -21,19 +21,19 @@ void Menus::ProveedorMenu()
 			W = 0;
 			break;
 		case 1:
-			Proveedor.AgregarProveedor();
+			ProveedorM.AgregarProveedor();
 			break;
 		case 2:
-			Proveedor.ImprimirProveedores();
+			ProveedorM.ImprimirProveedores();
 			break;
 		case 3:
-			Proveedor.BuscarProveedores();
+			ProveedorM.BuscarProveedores();
 			break;
 		case 4:
-			Proveedor.ModificarProveedores();
+			ProveedorM.ModificarProveedores();
 			break;
 		case 5:
-			Proveedor.EliminarProveedor();
+			ProveedorM.EliminarProveedor();
 			break;
 		}
 	}
@@ -60,19 +60,58 @@ void Menus::ProductoMenu()
 			W = 0;
 			break;
 		case 1:
-			Producto.Agregar();
+			ProductoM.Agregar();
 			break;
 		case 2:
-			Producto.Mostrar();
+			ProductoM.Mostrar();
 			break;
 		case 3:
-			Producto.Modificar();
+			ProductoM.Modificar();
 			break;
 		case 4:
-			Producto.Eliminar();
+			ProductoM.Eliminar();
 			break;
 		case 5:
-			Producto.Buscar();
+			ProductoM.Buscar();
+			break;
+		}
+	}
+}
+
+void Menus::OrdenesDeCompraMenu()
+{
+	int OP;
+	int W = 1;
+	while (W)
+	{
+		std::cout << "1.- Agregar Orden de compra." << std::endl;
+		std::cout << "2.- Imprimir Ordenes de compra." << std::endl;
+		std::cout << "3.- Modificar Ordenes de compra." << std::endl;
+		std::cout << "4.- Eliminar Orden de compra." << std::endl;
+		std::cout << "5.- Buscar Orden de compra." << std::endl;
+		std::cout << "6.- Salir" << std::endl;
+		std::cout << "Elegir: ";
+		std::cin >> OP;
+		std::cin.ignore();
+		switch (OP)
+		{
+		default:
+			W = 0;
+			break;
+		case 1:
+			OrdenDeCompra.Agregar();
+			break;
+		case 2:
+			OrdenDeCompra.Mostrar();
+			break;
+		case 3:
+			OrdenDeCompra.Modificar();
+			break;
+		case 4:
+			OrdenDeCompra.Eliminar();
+			break;
+		case 5:
+			OrdenDeCompra.Buscar();
 			break;
 		}
 	}

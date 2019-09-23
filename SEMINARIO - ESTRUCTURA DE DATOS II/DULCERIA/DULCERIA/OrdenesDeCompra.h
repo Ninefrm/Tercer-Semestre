@@ -13,11 +13,13 @@ public:
 	Proveedor Proveedor;
 	Producto Producto;
 	char Fecha[10], Pago[7], Entrega[30], Firma[9];
-	float Total;
+	int Cantidad = 0;
+	float Total = 0.0;
 	void Agregar();
 	void Mostrar();
-	void Modificiar();
+	void Modificar();
 	void Eliminar();
+	void Buscar();
 	void BuscarProducto();
 	void BuscarProveedor();
 };

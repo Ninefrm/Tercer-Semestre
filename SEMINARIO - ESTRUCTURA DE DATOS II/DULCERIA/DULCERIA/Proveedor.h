@@ -20,5 +20,16 @@ class Proveedor
 		void BuscarProveedores();
 		void ModificarProveedores();
 		void EliminarProveedor();
+
+		void AgregarNombreEmpresa(char Dato[20]);
+		void AgregarTelefono(char Dato[15]);
+		void AgregarDireccion(char Dato[30]);
+		void AgregarApellido(char Dato[30]);
+		void AgregarNombre(char Dato[30]);
+		void ReturnNombreEmpresa(char* outStr);
+		void ReturnTelefono(char* outStr);
+		void ReturnDireccion(char* outStr);
+		void ReturnApellidos(char* outStr);
+		void ReturnNombre(char* outStr);
 };
 

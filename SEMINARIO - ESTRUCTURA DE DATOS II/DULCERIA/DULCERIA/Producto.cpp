@@ -7,11 +7,11 @@ void Producto::Agregar()
 	std::cout << "DESCRIPCIÓN DEL PRODUCTO:" << std::endl;
 	std::cin.getline(Descripcion, 30);
 	std::cout << "ESCRIBIR PRECIOS:" << std::endl;
-	std::cin >> Precio;
+	std::cin.getline(Precio, 20);
 	std::ofstream Archivo("Productos.txt", std::ios::app);
 	Buff = strlen(Codigo);
 	Buff2 = strlen(Descripcion);
-	Buff3 = Precio;
+	Buff3 = strlen(Precio);
 	Buff4 = Estado;
 
 	Archivo.write((char*) &Buff, sizeof(int));
@@ -43,7 +43,7 @@ void Producto::Mostrar()
 			Descripcion[Buff2] = '\0';
 			Archivo.read((char*)& Buff3, sizeof(int));
 			Archivo.read((char*)& Precio, Buff3);
-
+			Precio[Buff3] = '\0';
 			Archivo.read((char*)& Buff4, sizeof(int));
 			Archivo.read((char*)& Estado, Buff4);
 			if (Archivo.eof())break;
@@ -116,7 +116,7 @@ void Producto::Modificar()
 			
 			Buff = strlen(Codigo);
 			Buff2 = strlen(Descripcion);
-			Buff3 = Precio;
+			Buff3 = strlen(Precio);
 			Buff4 = Estado;
 			File.write((char*)& Buff, sizeof(int));
 			File.write((char*)& Codigo, Buff);
@@ -167,7 +167,7 @@ void Producto::Eliminar()
 			if (strcmp(Codigo, wNombre)) {
 				Buff = strlen(Codigo);
 				Buff2 = strlen(Descripcion);
-				Buff3 = Precio;
+				Buff3 = strlen(Precio);
 				Buff4 = Estado;
 				File.write((char*)& Buff, sizeof(int));
 				File.write((char*)& Codigo, Buff);
@@ -181,7 +181,7 @@ void Producto::Eliminar()
 			if (!strcmp(Codigo, wNombre) && (!Estado)) {
 				Buff = strlen(Codigo);
 				Buff2 = strlen(Descripcion);
-				Buff3 = Precio;
+				Buff3 = strlen(Precio);
 				Buff4 = Estado;
 				File.write((char*)& Buff, sizeof(int));
 				File.write((char*)& Codigo, Buff);
@@ -233,4 +233,90 @@ void Producto::Buscar()
 			std::cout << Codigo << "		" << Descripcion << "		" << Precio << "." << std::endl;
 		}
 	}Archivo.close();
+}
+
+void Producto::AgregarCodigo(char Dato[10])
+{
+	strcpy_s(Codigo, 10, Dato);
+}
+
+void Producto::AgregarDescripcion(char Dato[30])
+{
+	strcpy_s(Descripcion, 30, Dato);
+}
+
+void Producto::AgregarPrecio(char Dato[20])
+{
+	strcpy_s(Precio, 20, Dato);
+}
+
+void Producto::ReturnCodigo(char* outStr)
+{
+	for (int i = 0; i < sizeof(Codigo); ++i) {
+		outStr[i] = Codigo[i];
+	}
+}
+
+void Producto::ReturnDescripcion(char* outStr)
+{
+	for (int i = 0; i < sizeof(Descripcion); ++i) {
+		outStr[i] = Descripcion[i];
+	}
+}
+
+void Producto::ReturnPrecio(char* outStr)
+{
+	for (int i = 0; i < 20; ++i) {
+		outStr[i] = Precio[i];
+	}
+}
+
+int Producto::ReturnBuff()
+{
+	return Buff;
+}
+
+int Producto::ReturnBuff2()
+{
+	return Buff2;
+}
+
+int Producto::ReturnBuff3()
+{
+	return Buff3;
+}
+
+int Producto::ReturnBuff4()
+{
+	return Buff4;
+}
+
+int Producto::ReturnEstado()
+{
+	return Estado;
+}
+
+void Producto::AgregarBuff(int A)
+{
+	Buff = A;
+}
+
+void Producto::AgregarBuff2(int A)
+{
+	Buff2 = A;
+}
+
+void Producto::AgregarBuff3(int A)
+{
+	Buff3 = A;
+}
+
+void Producto::AgregarBuff4(int A)
+{
+	Buff4 = A;
+}
+
+void Producto::AgregarEstado(int A)
+{
+	Estado = A;
 }

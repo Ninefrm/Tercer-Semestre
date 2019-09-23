@@ -198,3 +198,63 @@ void Proveedor::EliminarProveedor()
 		remove("Proveedor.txt");
 		rename("tmp.txt", "Proveedor.txt");
 }
+
+void Proveedor::AgregarNombreEmpresa(char Dato[20])
+{
+	strcpy_s(NombreEmpresa, 20, Dato);
+}
+
+void Proveedor::AgregarTelefono(char Dato[15])
+{
+	strcpy_s(Telefono, 15, Dato);
+}
+
+void Proveedor::AgregarDireccion(char Dato[30])
+{
+	strcpy_s(Direccion, 30, Dato);
+}
+
+void Proveedor::AgregarApellido(char Dato[30])
+{
+	strcpy_s(Apellidos, 30, Dato);
+}
+
+void Proveedor::AgregarNombre(char Dato[30])
+{
+	strcpy_s(Nombre, 30, Dato);
+}
+
+void Proveedor::ReturnNombreEmpresa(char* outStr)
+{
+	for (int i = 0; i < sizeof(NombreEmpresa); ++i) {
+		outStr[i] = NombreEmpresa[i];
+	}
+}
+
+void Proveedor::ReturnTelefono(char* outStr)
+{
+	for (int i = 0; i < sizeof(Telefono); ++i) {
+		outStr[i] = Telefono[i];
+	}
+}
+
+void Proveedor::ReturnDireccion(char* outStr)
+{
+	for (int i = 0; i < sizeof(Direccion); ++i) {
+		outStr[i] = Direccion[i];
+	}
+}
+
+void Proveedor::ReturnApellidos(char* outStr)
+{
+	for (int i = 0; i < sizeof(Apellidos); ++i) {
+		outStr[i] = Apellidos[i];
+	}
+}
+
+void Proveedor::ReturnNombre(char* outStr)
+{
+	for (int i = 0; i < sizeof(Nombre); ++i) {
+		outStr[i] = Nombre[i];
+	}
+}
