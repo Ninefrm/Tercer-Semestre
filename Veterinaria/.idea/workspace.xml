@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a84b992-c752-4264-9516-d18e3ca2b507" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.ftpquota" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdministrarPerfiles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Img/CompanyImage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Img/Fondo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Perfil.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Visual/VerPerfil.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cerrar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,7 +85,10 @@
       <workItem from="1571175907915" duration="500000" />
       <workItem from="1571322285270" duration="10347000" />
       <workItem from="1571343848492" duration="21000000" />
-      <workItem from="1571768520817" duration="320000" />
+      <workItem from="1571768520817" duration="12527000" />
+      <workItem from="1571927202910" duration="4043000" />
+      <workItem from="1571934700470" duration="4543000" />
+      <workItem from="1572314751275" duration="641000" />
     </task>
     <servers />
   </component>
