@@ -47,7 +47,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Libreria" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
@@ -89,6 +89,7 @@
       <workItem from="1571927202910" duration="4043000" />
       <workItem from="1571934700470" duration="4543000" />
       <workItem from="1572314751275" duration="641000" />
+      <workItem from="1572381828921" duration="288000" />
     </task>
     <servers />
   </component>
